@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Your Company Name</title>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<script type="text/javascript">
+    function validate()
+      {
+      var letters = /^[A-Za-z]+$/;  
+         if( document.myForm.fname.value == "" )
+         {
+            alert( "Please provide your firstname!" );
+            document.myForm.fname.focus() ;
+            return false;
+         }
+		 
+         if(!(myForm.fname.value.match(letters)) ) 
+           
+           {  
+             alert('Firstname must have alphabet characters only');  
+             myForm.fname.focus();  
+             return false;  
+           }  
+         if( document.myForm.lname.value == "" )
+         {
+            alert( "Please provide your lastname" );
+            document.myForm.lname.focus() ;
+            return false;
+         }
+         
+         if(!(myForm.lname.value.match(letters)) ) 
+           
+           {  
+             alert('Lastname must have alphabet characters only');  
+             myForm.lname.focus();  
+             return false;  
+           }  
+         
+         if( document.myForm.home.value == "" )
+         {
+            alert( "Please provide your homeadress!" );
+			document.myForm.home.focus() ;
+            return false;
+         }
+		 
+		 
+         return( true );
+      }
+	  
+ 
+      </script>
+</head>
+<body>
+
+<div id="container">
+	<div id="intro">
+		<div id="pageHeader">
+			
+			
+		</div>
+
+		
+		<div id="preamble">
+			
+			<p>
+			</p>
+		</div>
+	</div>
+
+	<div id="supportingText">
+		<div id="explanation">
+			</div>
+
+		<div id="participation">
+			</div>
+
+		<div class="form-style-5">
+             <form method="POST" action="/insert1.pl"  name="myForm" onsubmit="return(validate());">
+       
+	   <br><br><br><br><br><br><br><br><br>
+      <input type="text" name="fname" placeholder="Your  First Name *">
+      <input type="text" name="lname" placeholder="Your Last name *">
+	   <textarea name="home" placeholder="Your Home Address *"></textarea>
+
+     
+
+<input type="submit" value="Apply" />
+</form>
+</div>
+
+		<div id="footer">
+Copyright © 2006
+		</div>
+
+	</div>
+
+	
+	<div id="linkList">
+		<div id="linkList2">
+			<div id="lselect">
+				
+			</div>
+
+			<div id="larchives">
+				
+				
+					
+			</div>
+	</div>
+	</div>
+</div>
+
+<!-- Designed by DreamTemplate. Please leave link unmodified. -->
+<br><center><a href="http://www.dreamtemplate.com" title="Website Templates" target="_blank">Website templates</a></center>
+</body>
+</html>
